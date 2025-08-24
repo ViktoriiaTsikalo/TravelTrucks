@@ -1,0 +1,141 @@
+.filtersForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  width: 100%;
+}
+
+.location {
+  position: relative;
+}
+
+.locationLabel {
+  font-size: 16px;
+  color: var(--gray);
+  font-weight: 400;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mapSvg {
+  position: absolute;
+}
+.input {
+  margin-top: 8px;
+  border-radius: 12px;
+  padding: 16px 20px 16px 48px;
+  height: 56px;
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--inputs);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--main);
+  margin-bottom: 40px;
+}
+
+.input::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray);
+}
+
+.input:focus,
+.input:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.mapSvg {
+  position: absolute;
+  left: 16px;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.filtersTitle {
+  color: var(--text);
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.filtersItemTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  width: 100%;
+  border-bottom: 1px solid var(--gray-light);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-bottom: 32px;
+}
+
+.formButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.featureBtn {
+  border: 1px solid var(--gray-light);
+  background: none;
+  border-radius: 12px;
+  width: 112px;
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--main);
+}
+
+.active {
+  border: 1px solid var(--button);
+}
+
+.featureBtn:hover {
+  background: none;
+}
+
+.featureSvg {
+  width: 32px;
+  height: 32px;
+}
+
+.iconSpecial {
+  fill: none;
+  stroke-width: 1px;
+  stroke: #000;
+  width: 32px;
+  height: 32px;
+}
+
+.applyBtn {
+  width: 166px;
+  height: 56px;
+}
+
+.featureBtn span {
+  text-transform: capitalize;
+}

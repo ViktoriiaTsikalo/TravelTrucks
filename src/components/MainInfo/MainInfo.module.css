@@ -1,0 +1,77 @@
+.details {
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  margin-bottom: 28px;
+}
+
+.ratingAndLocationRow {
+  font-weight: 400;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-decoration: underline;
+}
+
+.starSvg {
+  width: 16px;
+  height: 16px;
+  fill: var(--rating);
+  margin-right: 4px;
+}
+
+.rating {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.mapSvg {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.image {
+  width: 292px;
+  height: 312px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.description {
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--text);
+  margin-top: 28px;
+}

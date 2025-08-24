@@ -1,0 +1,32 @@
+.badgesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  border-radius: 100px;
+  padding: 12px 18px;
+  display: flex;
+  width: auto;
+  background: var(--badges);
+  mix-blend-mode: multiply;
+  justify-content: center;
+  align-items: center;
+}
+
+.badgeSvg {
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
+
+.iconSpecial {
+  fill: none;
+  stroke-width: 1px;
+  stroke: #000;
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+}
