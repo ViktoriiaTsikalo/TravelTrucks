@@ -10,12 +10,9 @@ export const fetchCampers = createAsyncThunk(
   async ({ page = 1, limit = 4, filters = {} }, thunkAPI) => {
     try {
       // Передаємо всі фільтри як params, щоб бекенд їх врахував
-      const response = await API.get(
-        "https://your-backend-domain.com/catalog",
-        {
-          params: { page, limit, ...filters },
-        }
-      );
+      const response = await API.get("/campers", {
+        params: { page, limit, ...filters },
+      });
       return response.data; // { total, items }
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
